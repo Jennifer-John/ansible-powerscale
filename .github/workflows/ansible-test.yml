@@ -7,7 +7,7 @@ on:
     branches: [ master ]
   # Runs CI on every monday (at 06:00 UTC)
   schedule:
-    - cron: '0 6 * * 1'
+    - cron: '*/5 * * * *'
 
 jobs:
   build:
