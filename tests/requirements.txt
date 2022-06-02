@@ -1,7 +1,2 @@
-certifi
-isi-sdk-9-0-0
-isi-sdk-8-1-1
-python-dateutil
-setuptools
-six
-urllib3>=1.26.7
+pytest
+coverage==4.5.4
