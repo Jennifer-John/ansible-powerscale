@@ -68,7 +68,7 @@ jobs:
       - name: Setup Unit test Pre-requisites
         run: |
           ansible-galaxy collection install .cache/collection-tarballs/*.tar.gz
-          if [ -f /home/runner/.ansible/collections/ansible_collections/dellemc/powerscale/tests/requirements.txt ]; then pip install -r /home/runner/.ansible/collections/ansible_collections/dellemc/powerscale/tests/requirements.txt; f
+          pip install -r /home/runner/.ansible/collections/ansible_collections/dellemc/powerscale/tests/requirements.txt
 
       - name: Run Unit tests using ansible-test
         run: ansible-test units -v --color --python ${{ matrix.python-version }} --coverage
