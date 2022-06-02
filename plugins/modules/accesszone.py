@@ -13,7 +13,7 @@ DOCUMENTATION = r'''
 ---
 module: accesszone
 
-version_added: '1.2.0'
+version_added: '1.5.0'
 
 short_description: Manages access zones on PowerScale
 
