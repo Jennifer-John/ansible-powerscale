@@ -11,7 +11,7 @@ Minor Changes
 -------------
 
 - Added support for ignoring unresolvable hosts for NFS Export.
-- Added support for "everyone" user in filesystem module.
+- Added support for everyone user in filesystem module.
 - Added support for listing LDAP auth providers and user mapping rules in Info module.
 - Added support for PowerScale OneFS 9.5 Islander release.
 - For the execution of the PowerScale Ansible modules, python library "isilon-sdk" needs to be installed.
@@ -19,7 +19,7 @@ Minor Changes
 New Modules
 -----------
 
-- dellemc.powerscale.user_mapping_rule - Create, modify, get details, and delete a user mapping rule.
+- dellemc.powerscale.user_mapping_rule - Create, modify get details and delete a user mapping rule.
 
 v1.9.0
 ======

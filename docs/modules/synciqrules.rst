@@ -20,9 +20,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- A Dell PowerScale Storage system.
-- Ansible-core 2.13 or later.
-- Python 3.9, 3.10 or 3.11.
+- A Dell PowerScale Storage system. Ansible 2.13, 2.14 or 2.15.
 
 
 
@@ -101,9 +99,9 @@ Parameters
   verify_ssl (True, bool, None)
     boolean variable to specify whether to validate SSL certificate or not.
 
-    ``true`` - indicates that the SSL certificate should be verified.
+    True - indicates that the SSL certificate should be verified.
 
-    ``false`` - indicates that the SSL certificate should not be verified.
+    False - indicates that the SSL certificate should not be verified.
 
 
   api_user (True, str, None)
