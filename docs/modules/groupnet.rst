@@ -20,9 +20,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- A Dell PowerScale Storage system.
-- Ansible-core 2.13 or later.
-- Python 3.9, 3.10 or 3.11.
+- A Dell PowerScale Storage system. Ansible 2.13, 2.14 or 2.15.
 
 
 
@@ -76,9 +74,9 @@ Parameters
   verify_ssl (True, bool, None)
     boolean variable to specify whether to validate SSL certificate or not.
 
-    ``true`` - indicates that the SSL certificate should be verified.
+    True - indicates that the SSL certificate should be verified.
 
-    ``false`` - indicates that the SSL certificate should not be verified.
+    False - indicates that the SSL certificate should not be verified.
 
 
   api_user (True, str, None)
@@ -122,9 +120,9 @@ Examples
         dns_search_suffix:
           - 'samplesearch.com'
         dns_search_suffix_state: 'add'
-        state: "present"
+        state: "present"}
 
-    - name: Add dns servers to a groupnet
+    - name: Add dns_servers to a groupnet
       dellemc.powerscale.groupnet:
         onefs_host: "{{onefs_host}}"
         api_user: "{{api_user}}"
@@ -136,7 +134,7 @@ Examples
         dns_server_state: 'add'
         state: "present"
 
-    - name: Remove dns servers from a groupnet
+    - name: Remove dns_servers from a groupnet
       dellemc.powerscale.groupnet:
         onefs_host: "{{onefs_host}}"
         api_user: "{{api_user}}"
@@ -148,7 +146,7 @@ Examples
         dns_server_state: 'remove'
         state: "present"
 
-    - name: Add dns search suffix to a groupnet
+    - name: Add dns_search_suffix to a groupnet
       dellemc.powerscale.groupnet:
         onefs_host: "{{onefs_host}}"
         api_user: "{{api_user}}"
@@ -160,7 +158,7 @@ Examples
         dns_search_suffix_state: 'add'
         state: "present"
 
-    - name: Remove dns search suffix from a groupnet
+    - name: Remove dns_search_suffix from a groupnet
       dellemc.powerscale.groupnet:
         onefs_host: "{{onefs_host}}"
         api_user: "{{api_user}}"

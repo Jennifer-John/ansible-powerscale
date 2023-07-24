@@ -20,5 +20,11 @@ ACCESS_ZONE = {'access_zone': [{'az_name': 'testaz',
                                 "auth_providers": ["lsa-local-provider:System"]}]}
 
 
+@staticmethod
 def create_accesszone_failed_msg(az_name):
     return 'Creation of access zone ' + az_name + ' failed with error:'
+
+
+@staticmethod
+def delete_accesszone_failed_msg():
+    return 'Failed to delete access zone'
