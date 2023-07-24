@@ -490,7 +490,7 @@ class SmartQuota(object):
             include_snapshots = quota_dict['include_snapshots']
 
         container = False
-        if 'container' in quota_dict and quota_dict['container'] is not None \
+        if quota_dict and 'container' in quota_dict and quota_dict['container'] is not None \
                 and quota_type == "directory":
             container = quota_dict['container']
 

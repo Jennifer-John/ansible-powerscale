@@ -28,13 +28,13 @@ def get_ads_response_for_spn():
             'def',
             'ghi',
         ],
-        'recommended_spns' : [
+        'recommended_spns': [
             'abc',
             'def',
             'ghi',
             'klm'
         ],
-        'extra_expected_spns' : []
+        'extra_expected_spns': []
     }]
 
 
